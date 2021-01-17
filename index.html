@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    header {
+      background-color: #666;
+      padding: 30px;
+      font-size: 35px;
+      text-align: center;
+      color: white;
+    }
+
+    section {
+      display: flex;
+    }
+
+    nav {
+      flex: 1;
+      width: 30%;
+      background-color: silver;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    article {
+      flex: 3;
+      background-color: #f1f1f1f1;
+      padding: 10px;
+    }
+
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    @media(max-width: 480px) {
+      tr:nth-child(even) {
+        background-color: red;
+
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <h2>CSS LAYOUT FLOAT</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eius dolor quis saepe odit impedit? Rerum unde
+    deleniti molestiae enim nostrum odit illum possimus, vel dolore corporis eum. Nostrum, soluta!</p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel incidunt accusantium doloremque ea doloribus
+    provident neque rerum inventore fugiat architecto voluptatum ab beatae minima, nemo laudantium deserunt debitis
+    voluptatibus molestias.</p>
+
+  <header>
+    <h2>Cities</h2>
+  </header>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#">London</a></li>
+        <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>London</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ut facere, ullam atque amet commodi quis
+        consequuntur molestias accusantium aliquam magnam veniam doloribus at, repellendus dolorum dolore sunt nisi
+        cumque.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quo cupiditate? Perferendis aut excepturi
+        error ea voluptates a earum modi quod, officia placeat, doloribus enim sint fugit expedita? Temporibus, alias.
+      </p>
+      <table>
+        <tr>
+          <th>Perusahaan</th>
+          <th>Kontak</th>
+          <th>Kota</th>
+        </tr>
+        <tr>
+          <td>BCA</td>
+          <td>123123123</td>
+          <td>Depok</td>
+        </tr>
+        <tr>
+          <td>Mandiri</td>
+          <td>987987987</td>
+          <td>Jakarta</td>
+        </tr>
+        <tr>
+          <td>BNI</td>
+          <td>321321321</td>
+          <td>Bekasi</td>
+        </tr>
+      </table>
+      <form>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama">
+        <label for="umur">Umur</label>
+        <input type="number" id="umur" name="umur" placeholder="Umur">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+        <input type="submit" name="Pencet">
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=tangsel&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+              scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+              href="https://elitetorrent-es.com">elitetorrent</a><br>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 500px;
+                width: 600px;
+              }
+            </style><a href="https://google-map-generator.com">google maps in iframe</a>
+            <style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 500px;
+                width: 600px;
+              }
+            </style>
+          </div>
+        </div>
+      </form>
+    </article>
+  </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+</body>
+
+</html>
